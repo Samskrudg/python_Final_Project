@@ -9,15 +9,43 @@ class MainPageLocators:
     register_form = (By.ID, "register_form")
 
 
-class ProductPageLocators:
-    button_add = (By.CLASS_NAME, 'btn.btn-lg.btn-primary.btn-add-to-basket')
+class ProductPageLocators():
+    ADD_TO_BASKET_BUTTON = (By.CSS_SELECTOR, "button.btn-add-to-basket")
 
-    product_name = (By.CSS_SELECTOR, "div.product_main h1")
+    PRODUCT_NAME = (By.CSS_SELECTOR, "div.product_main>h1")
 
-    product_basket = (By.CSS_SELECTOR, "div.alertinner ")
+    PRODUCT_PRICE = (By.CSS_SELECTOR, "p.price_color")
 
-    price_product = (By.CSS_SELECTOR, "p.price_color")
-
-    price_basket = (By.CSS_SELECTOR, ".alertinner p strong")
+    ALERT = (By.CSS_SELECTOR, "div.alertinner")
 
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div.alertinner")
+
+
+class BasePageLocators:
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+
+    BASKET_LINK = (By.XPATH, "//a[contains(text(), 'View basket')]")
+
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+
+
+class BasketPageLocators:
+    BASKET_ITEM = (By.CSS_SELECTOR, ".basket-items .row")
+
+    ALERT = (By.CSS_SELECTOR, "div#content_inner p")
+
+
+class LoginPageLocators():
+    LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
+
+    REGISTRATION_FORM = (By.CSS_SELECTOR, "#register_form")
+
+    EMAIL = (By.ID, "id_registration-email")
+
+    PASSWORD1 = (By.ID, "id_registration-password1")
+
+    PASSWORD2 = (By.ID, "id_registration-password2")
+
+    BUTTON_SUBMIT = (By.NAME, "registration_submit")
