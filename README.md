@@ -2,4 +2,9 @@
 
 Написал тестовые примеры для сайта http://selenium1py.pythonanywhere.com/ru/
 
-Тесты можно запустить командами pytest -v --tb=line --language=en -m need_review last_project/test_product_page.py pytest -v --tb=line --language=en -m need_review last_project/test_main_page.py
+Для запуска моих тестов необходимо:
+
+Загрузить файлы из этого репозитория
+Установить все файлы из requirements.txt(pip install -r requirements.txt)
+Для запустка тестов напишите в терминале: "pytest -v --tb=line project/test_check_cards_page.py"
+Буду рад вашей обратной связи email: sam.skrudgi@gmail.com
